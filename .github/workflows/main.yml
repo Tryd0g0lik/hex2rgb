@@ -20,8 +20,6 @@ jobs:
         node-version: [18.x]
 
     steps:
-      # действие проверяет содержимое хранилища, в котором
-      # размещен вызывающий рабочий процесс, а не вызываемый рабочий процесс.
       - uses: actions/checkout@v4
 
       - name: Use Node.js ${{ matrix.node-version }}
